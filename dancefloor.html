@@ -6,11 +6,27 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/AntonDancer.js"></script>
+    <script src="src/KevinDancer.js"></script>
+    <script src="src/PartyParrot.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <audio src="./Assets/music.mp3" controls>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="KevinBlinkyDancer">add a Kevin dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeAntonDancer">add an Anton dancer</a>
+      <a href="#" class="addParrot" data-dancer-maker-function-name="PartyParrot">Unleash Party P!!</a>
+      <a href="#" class="spreadOut" >SPREAD DANCERS!!</a>
+      <a href="#" class="lineUp" >LINE UP DANCERS!!</a>
+      <a href="#" class="scatter" >SCATTER DANCERS!!</a>
+      <a href="#" class="reset" >CLEAR DANCEFLOOR!!</a>
+      <button class="toggleBackground">TOGGLE BACKGROUND!!</button>
+
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>

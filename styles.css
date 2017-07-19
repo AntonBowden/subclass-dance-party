@@ -1,18 +1,45 @@
 body, html{
   height:100%;
 }
+
+
 body{
   margin: 0px;
-  background-color:#444;
+  background-color:#222;
   font-size: 18px;
 }
+
+body.on{
+     background-color: #fff;
+     -webkit-animation: random 2s infinite;
+     animation: random 2s infinite;
+}
+@keyframes  random {
+    15% { background-color: white; }
+    15% { background-color: black; }
+    30% { background-color: white; }
+    45% { background-color: #ff48a6; }
+    60% { background-color: black; }
+    75% { background-color: white; }
+    90% { background-color: black; }
+    93% { background-color: white; }
+    96% { background-color: black; }
+    100% { background-color: white; }
+}
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addParrot{
   padding:5px 12px;
   float:right;
 }
+
+.lineUp, .reset, .scatter, .toggleBackground{
+  padding:5px 12px;
+  float:right;
+}
+
 .topbar{
   height:32px;
   background-color: #555;
@@ -21,7 +48,44 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid #FF1493;
   border-radius:10px;
   position:absolute;
+}
+
+
+@-webkit-keyframes change-size {
+    0%   { border:10px solid #00A0D6; border-radius:10px; }
+
+    50% { border:50px solid #9900DD; border-radius:50px; }
+
+    100% { border:10px solid #00A0D6; border-radius:10px; }
+  }
+
+
+.anton {
+  -webkit-animation: change-size 1s infinite;
+  -moz-animation:    change-size 1s infinite;
+  animation:         change-size 1s infinite;
+  border:50px solid #00A0D6;
+  color: #FFF;
+  border-radius:50px;
+  position:absolute;
+}
+
+@-webkit-keyframes mymove {
+    from{margin-left: 0px}
+    to {margin-left: 200px;}
+}
+
+.kevin {
+  border: 35px solid yellow;
+  border-radius: 35px;
+  position:absolute;
+}
+
+.partyP{
+   border: 0px solid yellow;
+   border-radius: 0px;
+   position:absolute;
 }
